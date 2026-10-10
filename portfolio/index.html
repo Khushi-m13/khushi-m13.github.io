@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khushi Bandpatte | Aspiring Data Expert</title>
+  <meta name="description" content="Portfolio of Khushi Bandpatte — Aspiring Data Expert specializing in Data Analytics, Business Intelligence, and Machine Learning.">
+  <meta name="keywords" content="Khushi Bandpatte, Data Analyst, Data Scientist, Machine Learning, Power BI, Python, Portfolio">
+  <meta name="author" content="Khushi Bandpatte">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Khushi Bandpatte | Aspiring Data Expert">
+  <meta property="og:description" content="Data Analyst & Machine Learning enthusiast turning raw datasets into insights and business value. Explore projects, skills, and certifications.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128202;</text></svg>">
+
+  <!-- Fonts: Poppins (display), Inter (body), Montserrat (utility / labels)
+       Hosted locally in assets/vendor/fonts — no Google Fonts request needed. -->
+  <link href="assets/vendor/fonts/fonts.css" rel="stylesheet">
+
+  <!-- Font Awesome (hosted locally in assets/vendor/fontawesome) -->
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= LOADING SCREEN ================= -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <span class="loader__bracket">&lt;</span>
+      <span class="loader__name">Khushi</span>
+      <span class="loader__bracket">/&gt;</span>
+    </div>
+    <div class="loader__bar"><span class="loader__bar-fill"></span></div>
+  </div>
+
+  <!-- ================= CUSTOM CURSOR GLOW ================= -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ================= PARTICLE BACKGROUND ================= -->
+  <div id="particles-js" class="particles-bg" aria-hidden="true"></div>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">Khushi<span class="nav__logo-dot">.</span></a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#hero" class="nav__link active-link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#certifications" class="nav__link">Certifications</a></li>
+        <li><a href="#timeline" class="nav__link">Journey</a></li>
+      
+      </ul>
+
+      <div class="nav__actions">
+        <a href="https://drive.google.com/file/d/1SZbQKRa5tPk3s5iMorOsCx13xmqAZCkJ/view?usp=drive_link" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__text" data-aos="fade-right" data-aos-duration="900">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Solapur, Maharashtra &middot; Open to opportunities</p>
+          <h1 class="hero__title">
+            Hi, I'm <span class="text-gradient">Khushi Bandpatte</span><br>
+            I build with <span id="typed" class="hero__typed"></span>
+          </h1>
+          <p class="hero__subtitle">
+            I work with data to create visual stories, business insights, and intelligent
+            solutions using Power BI, Python, and Machine Learning.
+          </p>
+
+          <p class="hero__quote">&ldquo;Data is not just information &mdash; it's intelligence.&rdquo;</p>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">
+              <i class="fa-solid fa-diagram-project"></i> Explore My Work
+            </a>
+            <a href="#contact" class="btn btn--outline">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="hero__socials">
+            <a href="https://github.com/Khushi-m13" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/khushi-bandpatte-6365662b9" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:khushibandpatte18@gmail.com" aria-label="Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+          <div class="hero__frame" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.15">
+            <div class="hero__avatar">
+              <img src="assets/images/profile.jpg" alt="Khushi Bandpatte">
+            </div>
+            <div class="hero__ring"></div>
+          </div>
+
+          <!-- Signature element: real toolkit, model training + SQL query -->
+        <!-- <div class="dual-panel" aria-hidden="true">
+            <div class="dual-panel__col dual-panel__col--py">
+              <span class="dual-panel__label"><i class="fa-brands fa-python"></i> model.py</span>
+              <pre>model.fit(X_train, y_train)
+pred = model.predict(X_test)
+&gt;&gt; accuracy: 0.94</pre>
+            </div>
+            <div class="dual-panel__divider"></div>
+            <div class="dual-panel__col dual-panel__col--java">
+              <span class="dual-panel__label"><i class="fa-solid fa-database"></i> insights.sql</span>
+              <pre>SELECT region, AVG(sales)
+FROM transactions
+GROUP BY region
+ORDER BY 2 DESC;</pre>
+            </div> -->
+          </div>
+
+          <div class="floating-icon floating-icon--1"><i class="fa-brands fa-python"></i></div>
+          <div class="floating-icon floating-icon--2"><i class="fa-solid fa-chart-pie"></i></div>
+          <div class="floating-icon floating-icon--3"><i class="fa-solid fa-database"></i></div>
+          <div class="floating-icon floating-icon--4"><i class="fa-solid fa-chart-line"></i></div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+      <div class="container">
+        <p class="section-eyebrow" data-aos="fade-up">Get to know me</p>
+        <h2 class="section-title" data-aos="fade-up">About Me</h2>
+
+        <div class="about__grid">
+          <div class="about__text" data-aos="fade-right">
+            <p>
+              I'm an <strong>aspiring Data Expert</strong> specializing in Data Analytics,
+              Business Intelligence, and Machine Learning. I started my journey in software
+              development and later transformed my skills toward data analytics and machine
+              learning &mdash; today, I focus on converting raw datasets into meaningful
+              insights and real business value.
+            </p>
+            <p>
+              I'm currently pursuing my <strong>B.Tech</strong> at Shree Siddheshwar Women's
+              College of Engineering, Solapur (2024&ndash;2027), after completing my Diploma at
+              Shri Siddheshwar Women's Polytechnic, Solapur. Along the way, I've completed
+              hands-on internships as a <strong>Data Analyst at CodeAlpha</strong> and a
+              <strong> Data Science intern at Oasis Infobyte</strong>, plus virtual experience
+              programs with Accenture, Deloitte, Quantium, Tata, and AWS.
+            </p>
+            <p>
+              Outside of models and dashboards, I care about explaining what the data means
+              &mdash; not just producing a number, but a story someone can act on.
+            </p>
+
+            <div class="about__goals">
+              <div class="goal-chip"><i class="fa-solid fa-bullseye"></i> Aspiring Data Expert</div>
+              <div class="goal-chip"><i class="fa-solid fa-chart-pie"></i> Business Intelligence</div>
+              <div class="goal-chip"><i class="fa-solid fa-graduation-cap"></i> Class of 2027</div>
+            </div>
+          </div>
+
+          <div class="about__cards" data-aos="fade-left">
+            <div class="info-card">
+              <i class="fa-solid fa-graduation-cap info-card__icon"></i>
+              <h3>Education</h3>
+              <p>B.Tech &mdash; Shree Siddheshwar Women's College of Engineering, Solapur</p>
+              <p class="info-card__sub">2024 &ndash; 2027</p>
+              <p class="info-card__sub">Diploma &mdash; Shri Siddheshwar Women's Polytechnic (2021&ndash;2024)</p>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-briefcase info-card__icon"></i>
+              <h3>Experience</h3>
+              <p>Data Analyst Intern &mdash; CodeAlpha</p>
+              <p>Data Science Intern &mdash; Oasis Infobyte</p>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-handshake info-card__icon"></i>
+              <h3>Availability</h3>
+              <p><span class="status-dot"></span> Available for opportunities</p>
+              <p class="info-card__sub">Usually responds within 24 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <p class="section-eyebrow" data-aos="fade-up">What I work with</p>
+        <h2 class="section-title" data-aos="fade-up">Skills &amp; Technologies</h2>
+
+        <div class="skills__grid">
+          <!-- Data Science & Analytics -->
+          <div class="skill-block" data-aos="fade-up">
+            <h3 class="skill-block__title"><i class="fa-solid fa-chart-line"></i> Data &amp; Analytics</h3>
+            <div class="skill-bars">
+              <div class="skill-bar" data-percent="88"><span class="skill-bar__label">Python (Pandas, NumPy)</span><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+              <div class="skill-bar" data-percent="82"><span class="skill-bar__label">Scikit-learn</span><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+              <div class="skill-bar" data-percent="80"><span class="skill-bar__label">Matplotlib &amp; Seaborn</span><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+              <div class="skill-bar" data-percent="85"><span class="skill-bar__label">Power BI</span><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+              <div class="skill-bar" data-percent="78"><span class="skill-bar__label">SQL Queries</span><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+              <div class="skill-bar" data-percent="75"><span class="skill-bar__label">Statistical Analysis</span><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+            </div>
+          </div>
+
+          <!-- Professional -->
+          <div class="skill-block" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="skill-block__title"><i class="fa-solid fa-users"></i> Professional</h3>
+            <div class="skill-bars">
+              <div class="skill-bar" data-percent="90"><span class="skill-bar__label">Communication</span><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+              <div class="skill-bar" data-percent="80"><span class="skill-bar__label">Leadership</span><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+              <div class="skill-bar" data-percent="85"><span class="skill-bar__label">Problem Solving</span><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+              <div class="skill-bar" data-percent="80"><span class="skill-bar__label">Business Intelligence</span><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+              <div class="skill-bar" data-percent="78"><span class="skill-bar__label">Data Visualization</span><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-block" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="skill-block__title"><i class="fa-solid fa-toolbox"></i> Tools &amp; Platforms</h3>
+            <div class="tool-grid">
+              <div class="tool-chip" data-tilt data-tilt-max="10"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+              <div class="tool-chip" data-tilt data-tilt-max="10"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+              <div class="tool-chip" data-tilt data-tilt-max="10"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+              <div class="tool-chip" data-tilt data-tilt-max="10"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+              <div class="tool-chip" data-tilt data-tilt-max="10"><i class="fa-solid fa-flask"></i><span>Google Colab</span></div>
+              <div class="tool-chip" data-tilt data-tilt-max="10"><i class="fa-solid fa-chart-simple"></i><span>Power BI</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATISTICS ================= -->
+    <section class="stats">
+      <div class="container stats__grid">
+        <div class="stat-card" data-aos="zoom-in">
+          <span class="stat-card__num" data-count="8">0</span>
+          <p class="stat-card__label">Projects Completed</p>
+        </div>
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+          <span class="stat-card__num" data-count="8">0</span>
+          <p class="stat-card__label">Certificates Earned</p>
+        </div>
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+          <span class="stat-card__num" data-count="12">0</span>
+          <p class="stat-card__label">Technologies Mastered</p>
+        </div>
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+          <span class="stat-card__num" data-count="2">0</span>
+          <p class="stat-card__label">Internships Completed</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <p class="section-eyebrow" data-aos="fade-up">Featured work</p>
+        <h2 class="section-title" data-aos="fade-up">Projects</h2>
+        <p class="section-lead" data-aos="fade-up">Hands-on data science and machine learning projects showcasing practical skills.</p>
+
+        <div class="project-grid" id="projectGrid">
+
+          <article class="project-card" data-aos="fade-up">
+            <div class="project-card__image project-card__image--1"><i class="fa-solid fa-users-viewfinder"></i></div>
+            <div class="project-card__body">
+              <h3>IBM Employee Job Satisfaction</h3>
+              <p>A predictive tool that identifies whether an employee is Satisfied, Neutral, or Dissatisfied based on key factors like Work-Life Balance, Monthly Income, and Environment Satisfaction.</p>
+              <div class="tech-tags"><span>Python</span><span>Pandas, NumPy</span><span>Matplotlib, Seaborn</span><span>Scikit-learn</span><span>Power BI</span></div>
+              <div class="project-card__links">
+                <a href="https://github.com/Khushi-m13/IBM-Employee-Job-Satisfaction" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://drive.google.com/file/d/1sdOqmqhUSd583lXgUpVfvOun-Poo7gmE/view?usp=drive_link" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Description</a>
+                <a href="assets/projects/IBM_Employee_Job_Satisfaction.pbix" target="_blank" rel="noopener"><i class="fa-solid fa-chart-simple"></i> Power BI File</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="project-card__image project-card__image--2"><i class="fa-solid fa-person-walking-arrow-right"></i></div>
+            <div class="project-card__body">
+              <h3>COVID-19 Unemployment Rate</h3>
+              <p>Analyzed India's unemployment trends during the COVID-19 pandemic. Cleaned and explored multiple datasets, then built a Linear Regression model to predict unemployment rates and surface the pandemic's impact on employment and labor participation.</p>
+              <div class="tech-tags"><span>Python</span><span>Pandas, NumPy</span><span>Matplotlib, Seaborn</span><span>Scikit-learn</span></div>
+              <div class="project-card__links">
+                <a href="https://github.com/Khushi-m13/OASIS_covid_unemployement_rate" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://drive.google.com/file/d/1WyDXIm-t9-an2icqiVYiCGPgM-s2cXiV/view?usp=drive_link" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Description</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card__image project-card__image--3"><i class="fa-solid fa-car"></i></div>
+            <div class="project-card__body">
+              <h3>Car Price Prediction Using Machine Learning</h3>
+              <p>Traditional pricing methods rely heavily on manual judgment and market trends, which can lead to inaccurate valuations. This project takes a data-driven approach, analyzing historical car data to predict prices effectively.</p>
+              <div class="tech-tags"><span>Python</span><span>Pandas, NumPy</span><span>Matplotlib, Seaborn</span><span>Scikit-learn</span><span>Pickle</span></div>
+              <div class="project-card__links">
+                <a href="https://github.com/Khushi-m13/Oasis-Task3-Car-price-prediction." target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://drive.google.com/file/d/1u5MRr4t4WYp4yzda8iq-lM4iIP7pYPLy/view?usp=drive_link" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Description</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-card__image project-card__image--4"><i class="fa-solid fa-seedling"></i></div>
+            <div class="project-card__body">
+              <h3>Iris Flower Classification</h3>
+              <p>Accurate classification of flower species based on physical measurements is an important task in botanical research. This model classifies iris species automatically, removing the time and error of manual identification.</p>
+              <div class="tech-tags"><span>Python</span><span>Pandas, NumPy</span><span>Matplotlib, Seaborn</span><span>Scikit-learn</span><span>Pickle</span></div>
+              <div class="project-card__links">
+                <a href="https://github.com/Khushi-m13/Iris-Classification-ML-Project" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://drive.google.com/file/d/1Dk6cWeAE72LRjuiUmy_vNlNWeq3JeK23/view?usp=sharing" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Description</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card__image project-card__image--5"><i class="fa-solid fa-charging-station"></i></div>
+            <div class="project-card__body">
+              <h3>EV Market Predictor</h3>
+              <p>An interactive web tool that takes a country as input and forecasts its electric vehicle market trajectory &mdash; returning latest sales, predicted 2026 sales, CAGR, and a market maturity classification (e.g. "Mature EV Market").</p>
+              <div class="tech-tags"><span>Python</span><span>Regression / Forecasting</span></span><span>Scikit-learn</span>
+                 <div class="project-card__links">
+            <a href="https://github.com/Khushi-m13/Global-EV-Evaluation" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="  " target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Report</a>
+              </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="project-card__image project-card__image--6"><i class="fa-solid fa-building-columns"></i></div>
+            <div class="project-card__body">
+              <h3>Bank Customer Churn Analysis</h3>
+              <p>A two-page Power BI dashboard analyzing bank customer attrition, built with custom DAX measures on a MySQL-backed dataset of 1,0000+ customers. Surfaces high-risk segments and revenue at risk &mdash;.</p>
+              <div class="tech-tags"><span>Python</span><span>MySQL</span><span>Power BI</span><span>DAX</span></div>
+              <div class="project-card__links">
+                <a href="assets/projects/Bank_Customer_Churn_Analysis_Report.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Report</a>
+                <a href="assets/projects/Bank_Customer_Churn_Analysis.pbix" target="_blank" rel="noopener"><i class="fa-solid fa-chart-simple"></i> Power BI File</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-card__image project-card__image--7"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div class="project-card__body">
+              <h3>Indian Mortality Analysis &amp; 2026 Forecast</h3>
+              <p>A multi-page Power BI dashboard analyzing mortality trends across India by disease, gender, and state, with a dedicated disease deep-analysis page and a predictive 2026 forecast projecting disease-wise deaths nationally and by state.</p>
+              <div class="tech-tags"><span>Power BI</span><span>DAX</span><span>Predictive Modeling</span></div>
+              <div class="project-card__links">
+                <a href="assets/projects/Indian_Mortality_Analysis_Report.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Report</a>
+                <a href="assets/projects/Indian_Mortality_Analysis.pbix" target="_blank" rel="noopener"><i class="fa-solid fa-chart-simple"></i> Power BI File</a>
+              </div>
+              
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="project-card__image project-card__image--8"><i class="fa-solid fa-traffic-light"></i></div>
+            <div class="project-card__body">
+              <h3>Smart Traffic Management System</h3>
+              <p>A real-time adaptive traffic signal system that uses OpenCV to analyze traffic video frames and estimate vehicle density per road, then dynamically assigns green-signal priority to the most congested road instead of relying on fixed timers. Includes emergency-vehicle override logic and a live smart-city style dashboard built with Chart.js.</p>
+              <div class="tech-tags"><span>Python</span><span>FastAPI</span><span>OpenCV</span><span>JavaScript</span><span>Chart.js</span></div>
+              <div class="project-card__links">
+                <a href="https://github.com/Khushi-m13/traffic-system" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="assets/projects/Smart_Traffic_Management_System_Report.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Report</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section class="certifications" id="certifications">
+      <div class="container">
+        <p class="section-eyebrow" data-aos="fade-up">Verified learning</p>
+        <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+
+        <div class="cert-list">
+          <div class="cert-card" data-aos="fade-up">
+            <div class="cert-card__icon"><i class="fa-solid fa-chart-column"></i></div>
+            <div class="cert-card__body">
+              <h3>Data Analytics and Visualization</h3>
+              <p>Accenture North America &middot; Virtual Experience Program</p>
+            </div>
+            <a class="cert-card__badge" href="https://drive.google.com/file/d/1K0X9I8Ht_3nH6ja4Vz6yhSMVWHc0q-NE/view?usp=drive_link" target="_blank" rel="noopener"><i class="fa-solid fa-eye"></i> View</a>
+          </div>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="cert-card__icon"><i class="fa-brands fa-aws"></i></div>
+            <div class="cert-card__body">
+              <h3>Solutions Architecture Job Simulation</h3>
+              <p>AWS &middot; Virtual Experience Program</p>
+            </div>
+            <a class="cert-card__badge" href="https://drive.google.com/file/d/1IIA0nj4As93N4Wnd1wuqtgnufpi5zyuu/view?usp=drive_link" target="_blank" rel="noopener"><i class="fa-solid fa-eye"></i> View</a>
+          </div>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-card__icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <div class="cert-card__body">
+              <h3>Data Analytics</h3>
+              <p>Deloitte &middot; Virtual Experience Program</p>
+            </div>
+            <a class="cert-card__badge" href="https://drive.google.com/file/d/1SXnGVhdMLlihOPKQ-p6uQNvVRMczpfzD/view?usp=drive_link" target="_blank" rel="noopener"><i class="fa-solid fa-eye"></i> View</a>
+          </div>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="cert-card__icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <div class="cert-card__body">
+              <h3>Data Analytics</h3>
+              <p>Quantium &middot; Virtual Experience Program</p>
+            </div>
+            <a class="cert-card__badge" href="https://drive.google.com/file/d/1IArl3R8W1dMP20DcIqSo50JPp1SYdwsU/view?usp=drive_link" target="_blank" rel="noopener"><i class="fa-solid fa-eye"></i> View</a>
+          </div>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="cert-card__icon"><i class="fa-solid fa-database"></i></div>
+            <div class="cert-card__body">
+              <h3>GenAI Powered Data Analytics</h3>
+              <p>Tata Group &middot; via Forage</p>
+            </div>
+            <a class="cert-card__badge" href="https://drive.google.com/file/d/1bdWeilBnyPF6I71WvNqPMM6kSTyIpf-c/view?usp=drive_link" target="_blank" rel="noopener"><i class="fa-solid fa-eye"></i> View</a>
+          </div>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="cert-card__icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="cert-card__body">
+              <h3>ESG Job Simulation</h3>
+              <p>Tata Group &middot; via Forage</p>
+            </div>
+            <a class="cert-card__badge" href="https://drive.google.com/file/d/1Nqa90jHBScNNErGf7iOXeCxBONFFosMu/view?usp=drive_link" target="_blank" rel="noopener"><i class="fa-solid fa-eye"></i> View</a>
+          </div>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="cert-card__icon"><i class="fa-brands fa-java"></i></div>
+            <div class="cert-card__body">
+              <h3>Learning Java 17</h3>
+              <p>LinkedIn Learning &middot; Course Completion</p>
+            </div>
+            <a class="cert-card__badge" href="https://drive.google.com/file/d/10o5XDZ46Di4An5snA7RnKuvkqPLR8qJG/view?usp=drive_link" target="_blank" rel="noopener"><i class="fa-solid fa-eye"></i> View</a>
+          </div>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="cert-card__icon"><i class="fa-solid fa-cloud"></i></div>
+            <div class="cert-card__body">
+              <h3>AWS Academy Graduate &mdash; Cloud Architecting</h3>
+              <p>AWS Academy &middot; 60-hour Training Badge</p>
+            </div>
+            <a class="cert-card__badge" href="https://drive.google.com/drive/folders/15W_tSa2Fjh435sfVJKWVBF26s6sffXV4?usp=drive_link" target="_blank" rel="noopener"><i class="fa-solid fa-eye"></i> View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TIMELINE ================= -->
+    <section class="timeline" id="timeline">
+      <div class="container">
+        <p class="section-eyebrow" data-aos="fade-up">How I got here</p>
+        <h2 class="section-title" data-aos="fade-up">My Journey</h2>
+
+        <div class="timeline__track">
+          <div class="timeline__item" data-aos="fade-up">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__year">2021</span>
+              <h3>Shree Digamber Jain Gurukul, Solapur</h3>
+              <p>Completed schooling, where curiosity for numbers and patterns first took hold.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item" data-aos="fade-up" data-aos-delay="50">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__year">2021 &ndash; 2024</span>
+              <h3>Diploma &mdash; Shri Siddheshwar Women's Polytechnic</h3>
+              <p>Built a foundation in software development and core programming concepts.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__year">2024 &ndash; 2027</span>
+              <h3>B.Tech &mdash; Shree Siddheshwar Women's College of Engineering</h3>
+              <p>Transitioning core software skills toward data analytics and machine learning.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item" data-aos="fade-up" data-aos-delay="150">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__year">Internship</span>
+              <h3>Data Analyst &mdash; CodeAlpha</h3>
+              <p>Worked hands-on with real datasets, dashboards, and business reporting.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__year">Internship</span>
+              <h3>Data Science &mdash; Oasis Infobyte</h3>
+              <p>Built and evaluated predictive models, including the unemployment and car-price projects above.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item" data-aos="fade-up" data-aos-delay="250">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__year">Now</span>
+              <h3>Placement Preparation</h3>
+              <p>Sharpening technical fundamentals and interview readiness for campus placements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <p class="section-eyebrow" data-aos="fade-up">Get in touch</p>
+        <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+        <p class="contact__intro" data-aos="fade-up">
+          Open to internships, placement opportunities, and collaborations in data analytics and machine learning.
+        </p>
+
+        <div class="contact__grid">
+          <a href="mailto:khushibandpatte18@gmail.com" class="contact-card" data-aos="fade-up">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email</h3>
+            <p>khushibandpatte18@gmail.com</p>
+          </a>
+          <a href="https://github.com/Khushi-m13" target="_blank" rel="noopener" class="contact-card" data-aos="fade-up" data-aos-delay="50">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+            <p>github.com/Khushi-m13</p>
+          </a>
+          <a href="https://linkedin.com/in/khushi-bandpatte-6365662b9" target="_blank" rel="noopener" class="contact-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <h3>LinkedIn</h3>
+            <p>khushi-bandpatte</p>
+          </a>
+          <div class="contact-card" data-aos="fade-up" data-aos-delay="150">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Location</h3>
+            <p>Solapur, Maharashtra, India</p>
+          </div>
+        </div>
+
+        <div class="resume-cta" data-aos="fade-up">
+          <a href="https://drive.google.com/file/d/1SZbQKRa5tPk3s5iMorOsCx13xmqAZCkJ/view?usp=drive_link" class="btn btn--primary" target="_blank" rel="noopener">
+            <i class="fa-solid fa-file-download"></i> Download Resume
+          </a>
+          <p class="resume-cta__note">PDF opens in a new tab</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="nav__logo">Khushi<span class="nav__logo-dot">.</span></a>
+
+      <ul class="footer__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer__socials">
+        <a href="https://github.com/Khushi-m13" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/khushi-bandpatte-6365662b9" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:khushibandpatte18@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; <span id="year"></span> Khushi Bandpatte. All rights reserved.</p>
+  </footer>
+
+  <!-- ================= BACK TO TOP ================= -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="assets/vendor/typed/typed.umd.js"></script>
+  <script src="assets/vendor/particles/particles.js"></script>
+  <script src="assets/vendor/vanilla-tilt/vanilla-tilt.min.js"></script>
+
+  <script src="js/particles.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
